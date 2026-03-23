@@ -4,7 +4,7 @@
 
 This project utilizes the trained `MBSPred` model to predict smORFs coding potential from 2 different datasets. `MBSPred` employs 5 features extractions branches, to find local motifs and long-range dependencies on DNA sequences, including:
 
-1. Multiple Kerne Convolutions.
+1. Multiple Kernel Convolutions.
 2. Multiple Gapped Kernel Convolutions.
 3. Multiple Strided Kernel Convolutions.
 4. DNABERT-6 fine-tuned for smORF detection.
@@ -27,13 +27,13 @@ Execute the bash script in MBSPRed's root directory to setup the environment.
 1. Prediction run of MBSPred model on test datasets with 100-nucleotide left flank coding and non-coding smORFs(Path: `data/100flank`) 
 
 ```
-./MBSPred-test.bin --codingFASTA="data/extracted/coding_smorfs_2pep_test.fa" --nonCodingFASTA="data/extracted/non_coding_smorfs_2pep_test.fa"
+./MBSPred-test --codingFASTA="data/extracted/coding_smorfs_2pep_test.fa" --nonCodingFASTA="data/extracted/non_coding_smorfs_2pep_test.fa"
 ```
 
 2. Prediction run of MBSPred model on test datasets with extracted coding and non-coding smORFs (Path: `data/extracted`) 
 
 ```
-./MBSPred-test.bin --codingFASTA="data/100flank/positive_simSorfs_Flank-100.fa" --nonCodingFASTA="data/100flank/negative_simSorfs_Flank-100.fa"
+./MBSPred-test --codingFASTA="data/100flank/positive_simSorfs_Flank-100.fa" --nonCodingFASTA="data/100flank/negative_simSorfs_Flank-100.fa"
 ```
 
 # Results
