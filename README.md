@@ -27,13 +27,13 @@ Execute the bash script in MBSPRed's root directory to setup the environment.
 1. Prediction run of MBSPred model on test datasets with 100-nucleotide left flank coding and non-coding smORFs(Path: `data/100flank`) 
 
 ```
-./MBSPred-test --codingFASTA="data/extracted/coding_smorfs_2pep_test.fa" --nonCodingFASTA="data/extracted/non_coding_smorfs_2pep_test.fa"
+./MBSPred-test --codingFASTA="data/100flank/positive_simSorfs_Flank-100.fa" --nonCodingFASTA="data/100flank/negative_simSorfs_Flank-100.fa"
 ```
 
 2. Prediction run of MBSPred model on test datasets with extracted coding and non-coding smORFs (Path: `data/extracted`) 
 
 ```
-./MBSPred-test --codingFASTA="data/100flank/positive_simSorfs_Flank-100.fa" --nonCodingFASTA="data/100flank/negative_simSorfs_Flank-100.fa"
+./MBSPred-test --codingFASTA="data/extracted/coding_smorfs_2pep_test.fa" --nonCodingFASTA="data/extracted/non_coding_smorfs_2pep_test.fa"
 ```
 
 # Results
